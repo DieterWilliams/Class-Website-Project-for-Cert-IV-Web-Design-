@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(252, 205, 148);
+    background-color: rgb(255, 255, 255);
     color: hsl(0, 0%, 11%);
     /* font-family: Arial, Helvetica, sans-serif; */
     font-family: "Montserrat", sans-serif;
@@ -17,7 +17,7 @@ img {
     flex-wrap: wrap; */
     flex-flow: row wrap;
     justify-content: space-between;
-    background-color: hsl(35, 86%, 60%);
+    background-color: hsl(0, 41%, 58%);
     align-items: flex-end;
     padding: 10px 20px;
     font-family: "PT Serif", serif;
@@ -29,7 +29,7 @@ img {
 .navigation a {
     text-decoration: none;
     color:hsl(33, 100%, 8%);
-    padding: 15px;
+    padding: 10px;
 }
 .navigation a:hover {
     color:hsl(33, 96%, 71%);
@@ -39,7 +39,7 @@ img {
     align-self: center;
     font-size: 32px;
     padding: 5px;
-    min-width: 48px;
+    min-width: 50px;
     background-color: transparent;
     border-color: transparent;
     display: none;
@@ -52,7 +52,7 @@ img {
     background-image: url("../images/pexels-jakkel-418831.jpg");
     background-position: center;
     background-size: cover;
-    min-height: 50vh;
+    /* min-height: 50vh; */
     /* display: grid;
     place-items: center; */
     display: flex;
@@ -150,4 +150,48 @@ img {
     min-width: 10ch;
     border: 1px solid transparent;
     border-radius: 4px;
+}
+/* carousel */
+.slide {
+    min-width: 100%;
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+    font-size: 4em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slide:nth-child(1) {
+    background-color: hotpink;
+    background-image: url("/Images/Basketball\ shoes\ black\ and\ white\ background.jpg");
+    
+}
+.slide:nth-child(2) {
+    background-color: #e3e360;
+    background-image: url("");
+}
+.slide:nth-child(3) {
+    background-color: #09ccb2;
+    background-image: url("");
+}
+.slide:nth-child(4) { 
+    background-color: #07c041;
+    background-image: url("");
+}
+.slide:nth-child(5) { 
+    background-color: #05619e;
+    background-image: url("");
+}
+.about-page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.about-content {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    max-width: 1200px;
+    margin: 2em auto;
+    gap: 20px;
 }

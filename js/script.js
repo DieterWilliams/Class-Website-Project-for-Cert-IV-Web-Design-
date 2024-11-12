@@ -15,4 +15,4 @@ function onLoad() {
     })
 }
 // waiting for document to load
-window.addEventListener('load', onLoad )
+window.addEventListener('load', onLoad ) 
